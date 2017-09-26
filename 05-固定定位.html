@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 定位 position
+        
+        文档流：标准流
+            正常来说html的布局；行内元素 块元素
+            行内元素 排列一行 遇到边界自动换行
+            块元素 霸占一行
+        相对定位 relative 参照物以自己原先的位置还在
+        绝对路径 absolute 以父元素为基准（父元素设置相对定位）脱离文档流 不占位置
+        固定定位 fixed  以浏览器 body  为参照物
+        无定位  ：static
+
+     */
+
+
+        .box{
+            width: 200px;
+            height: 200px;
+           
+            background-color: red;
+
+           /* 固定定位 */
+           position: fixed;
+           left: 50px;
+           top: 200px;
+        }
+    
+    </style>
+  
+
+</head>
+<body>
+    <div class="box"></div>
+    <span>span</span>
+
+</body>
+</html>

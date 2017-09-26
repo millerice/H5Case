@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        .box:hover{
+
+            /* 旋转45度 */
+            transform: perspective(800px) rotateY(45deg);
+
+            /* 背面是否可见 */
+            /* backface-visibility: hidden; */
+
+            /* 是否有3D展示 flat */
+            transform-style: preserve-3d; 
+        }
+
+        .blue:hover{
+            transform: perspective(800px) rotateY(-90deg);
+            
+        }
+    
+    .box{
+            width: 400px;
+            height: 200px;
+
+            background-color: red;
+            margin: 100px auto 0;
+            
+            /* 解决鼠标离开后的问题 */
+            transition: all 1s linear;
+        }
+
+        .blue{
+           
+            height: 50px;
+            background-color:blue;     
+            
+            /* 解决鼠标离开后的问题 */
+            transition: all 1s linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <P>demo</P>
+            <div class="blue"></div>
+    </div>
+
+   
+    
+</body>
+</html>

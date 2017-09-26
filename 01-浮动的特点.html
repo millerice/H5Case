@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        /* 浮动
+        1.left right
+        2.遇到边界停止 父元素边界 平级元素 兄弟元素边界
+        3.不占位置
+        4.文字绕着浮动元素走
+        5.清除浮动 3种 记住伪类
+        6.浮动元素 垂直外边距没有合并
+         */
+
+        div{
+            /* width: 200px; */
+            /* height: 200px; */
+        }
+
+
+        
+        .bigbox{
+            width: 900px;
+            height: 900px;
+            border: 1px solid black;
+        }
+
+
+        .box{
+            /* background-color: red; */
+            /* float: left */
+
+        }
+
+        .box1{
+
+            /* background-color: green; */
+            /* float: right; */
+        }
+
+        .bigbox img{
+            float: left;
+
+        }
+
+        .bigbox p{
+
+            margin: 0;
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="bigbox">
+            <div class="box">
+
+                <img src="banner.jpg" alt="picture">
+                <p>
+                    xxxxxxxxxxx是一所狮子雄厚，老虎无处不在的好学校。
+                    xxxxxxxxxxx是一所狮子雄厚，老虎无处不在的好学校。
+                    xxxxxxxxxxx是一所狮子雄厚，老虎无处不在的好学校。
+                    xxxxxxxxxxx是一所狮子雄厚，老虎无处不在的好学校。
+                    xxxxxxxxxxx是一所狮子雄厚，老虎无处不在的好学校。
+                    xxxxxxxxxxx是一所狮子雄厚，老虎无处不在的好学校。
+                    xxxxxxxxxxx是一所狮子雄厚，老虎无处不在的好学校。
+                    xxxxxxxxxxx是一所狮子雄厚，老虎无处不在的好学校。
+                    xxxxxxxxxxx是一所狮子雄厚，老虎无处不在的好学校。
+                    xxxxxxxxxxx是一所狮子雄厚，老虎无处不在的好学校。
+                    xxxxxxxxxxx是一所狮子雄厚，老虎无处不在的好学校。
+
+
+                </p>
+            </div>
+            <div class="box1"></div>
+    </div>
+    
+</body>
+</html>

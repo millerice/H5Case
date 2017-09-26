@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        .box:hover{
+
+            /* 三维透视 500-800 */
+            /* transform: perspective(800px) rotateY(45deg); */
+
+            transform: scale(3,3);
+
+            /* 可取 px left em */
+            transform-origin: right top; 
+        }
+    
+    .box{
+            /* width: 400px;
+            height: 200px; */
+
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 100px auto 0;
+            
+            /* 解决鼠标离开后的问题 */
+            transition: all 1s linear;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>

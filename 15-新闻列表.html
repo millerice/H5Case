@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+
+            ul,h1{
+                margin: 0;
+                padding: 0;
+            }
+            /* 2.设置div 盒子的 宽度 边框 内边距 
+                600px  290px  #d1d1d1 20px
+            */
+            .box{
+                width: 560px;
+                height: 290px;
+                border: 1px solid #d1d1d1;
+                padding: 0 20px;
+                margin: 0 auto;
+
+                /* 元素溢出 */
+                overflow: auto;
+                
+            }
+
+            /* 3.head 新闻列表 高度 
+                50px  下边框
+            */
+            .head{
+                height: 50px;
+                border-bottom: 1px solid #d1d1d1;
+                
+            }
+
+            /* 4.head h 字体的大小，红色的下边框 
+                18px
+            */
+            .head h1{
+                width: 100px;
+                font-size: 18px;
+                border-bottom: 2px solid red;
+
+                float: left;
+                line-height: 50px;
+                text-indent: 10px;
+
+            }
+
+            /* 5.a “更多” 居中 去掉下划线 右边
+                14px  灰色
+             */
+             .head a{
+                 font-size: 14px;
+                 color: lightgray;
+                 text-decoration: none;
+                float: right;
+                line-height: 50px;
+             }
+
+            /* 6.ul>li>a+span */
+            .list{
+                margin-top: 2px;
+                list-style: none;
+
+            }
+
+            /* 7.li标签 高度 下边框 左侧的图标 
+                46px  文字缩进35px
+
+                内容文字大小 14px
+            */
+            .list li{
+                height: 39px;
+                border-bottom: 1px solid #d1d1d1;
+                text-indent: 35px;
+                line-height: 39px;
+                /* 背景图标 */
+                background: url("images/icon.jpg") no-repeat 4px 13px;
+            }
+            .list li a{
+                font-size: 14px;
+                color: black;
+                text-decoration: none;
+
+                float: left;
+            }
+            .list li span{
+                font-size: 14px;
+                float: right;
+            }
+
+    </style>
+</head>
+<body>
+    <!-- 1.搭建界面 div>div(h+a)+ul -->
+    <div class="box">
+        <!-- 1.head -->
+        <div class="head">
+            <h1>新闻列表</h1>
+            <a href="">更多&gt;&gt;</a>
+        </div>
+        <!-- 2.列表 -->
+        <ul class="list">
+            <!-- (li>a{}+span{})*6 -->
+            <li><a href="">热烈祝贺xxxxxxx大学建校160周年中国第一所学校</a><span>2017-9-22</span></li>
+            <li><a href="">热烈祝贺xxxxxxx大学建校160周年中国第一所学校</a><span>2017-9-22</span></li>
+            <li><a href="">热烈祝贺xxxxxxx大学建校160周年中国第一所学校</a><span>2017-9-22</span></li>
+            <li><a href="">热烈祝贺xxxxxxx大学建校160周年中国第一所学校</a><span>2017-9-22</span></li>
+            <li><a href="">热烈祝贺xxxxxxx大学建校160周年中国第一所学校</a><span>2017-9-22</span></li>
+            <li><a href="">热烈祝贺xxxxxxx大学建校160周年中国第一所学校</a><span>2017-9-22</span></li>          
+
+        </ul>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 2.设置table的边框大小 */
+        .tb{
+            width: 710px;
+            height: 250px;
+            border: 1px solid black;
+            margin: 0 auto;
+
+            /* 4.边框合并 */
+            border-collapse: collapse;
+
+        }
+        /* 3.设置td边框的大小 */
+        .tb td{
+            border: 1px solid black;
+
+            /* 首行缩进 */
+            text-indent: 10px;
+        }
+        /* 5.合并单元格 */
+        /* 6.填充内容 */
+        /* 7.设置head */
+        .tb th{
+            background-color: #ebfaf3;
+            text-align: left;
+            text-indent: 10px;
+            height: 40px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 1.搭建界面 -->
+    <!-- table>tr*6>td*5 -->
+    <table class="tb">
+        <tr>
+            <th colspan="5">基本情况</th>
+           
+        </tr>
+        <tr>
+            <td width="16%">姓名</td>
+            <td width="22%"></td>
+            <td width="16%">性别</td>
+            <td width="22%"></td>
+            <td width="24%" rowspan="5"><img src="images/head.jpg" alt="个人头像"></td>
+        </tr>
+        <tr>
+            <td>民族</td>
+            <td></td>
+            <td>出生日期</td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td>政治面貌</td>
+            <td></td>
+            <td>健康情况</td>
+            <td></td>
+           
+        </tr>
+        <tr>
+            <td>籍贯</td>
+            <td></td>
+            <td>学历</td>
+            <td></td>
+           
+        </tr>
+        <tr>
+            <td>电子信箱</td>
+            <td></td>
+            <td>联系电话</td>
+            <td></td>
+           
+        </tr>
+    </table>    
+    
+</body>
+</html>

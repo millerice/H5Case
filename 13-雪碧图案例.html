@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 雪碧图 精灵图
+            一张大图  上面有多个小图
+            200个小图标加载200次
+            一张图  200个小图标 通过调整背景图的位置
+            节约cpu的消耗，提升用户体验
+           
+         */
+        .list{
+            width: 300px;
+            margin: 0 auto;
+
+            list-style: none;
+            padding: 0;
+
+        }
+
+        /* 3.设置li标签 60 */
+        .list li{
+            height: 60px;
+            border-bottom: 1px dotted lightgray;
+            line-height: 60px;
+
+            /* 设置背景图 */
+            background: url("images/bg01.png") no-repeat 0px 8px;
+            text-indent: 50px;
+
+        }
+            /* 第二个图标 80px */
+        .list .li2{
+            background-position-y: -72px;
+        }
+        .list .li3{
+            background-position-y: -152px;
+        }
+        .list .li4{
+            background-position-y: -234px;
+        }
+        .list .li5{
+            background-position-y: -316px;
+        }
+
+        /* 4.a标签 */
+        .list li a{
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+          
+    </style>
+
+</head>
+<body>
+    <!-- 1.搭建界面 -->
+    <!-- ul>(li>a{战狼2})*5 -->
+    <ul class="list">
+        <li><a href="">战狼2</a></li>
+        <li class="li2"><a href="">战狼2</a></li>
+        <li class="li3"><a href="">战狼2</a></li>
+        <li class="li4"><a href="">战狼2</a></li>
+        <li class="li5"><a href="">战狼2</a></li>
+    </ul>    
+</body>
+</html>

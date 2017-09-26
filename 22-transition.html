@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* transition 过度 转场动画*/
+        .box:hover{
+            width: 1000px;
+            height: 300px;
+            background-color: green;
+
+            /* 让那个属性 动画 */
+            /* transition-property: width; */
+
+            /* 动画时长 */
+            /* transition-duration: 2s; */
+
+            /* 时间速度函数 Linear 匀速  ease-in-out渐进渐出*/
+            /* transition-timing-function: ease-in-out; */
+
+            /* 延迟 */
+            /* transition-delay: 2s; */
+
+
+            /* 连写 */
+            /* transition: width 1s linear, height 2s linear, background-color  2s linear; */
+
+
+            transition: all 1s linear;
+        }
+
+        .box{
+            width: 400px;
+            height: 200px;
+            background-color: red;
+            margin: 100px auto 0;
+            
+            /* 解决鼠标离开后的问题 */
+            transition: all 1s linear;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>

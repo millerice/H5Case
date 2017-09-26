@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 属性选择器 */
+        /* 1.凡是DIV 有class属性的 都生效了 */
+        /* div[class]{
+            color: red;
+        } */
+
+        /* 2. class = "abc" 的DIV 生效 */
+        /* div[class = "abc"]{
+            color: red;
+        } */
+
+        /* 3. class ^= "a" 以a开头的生效*/
+        /* div[class ^= "a"]{
+            color: red;
+        } */
+
+        /* 4. $class $= "k" 以k结尾的生效  */
+        /* div[class $= "k"]{
+            color: red;
+        } */
+
+        /* 5. *class *= "b" 只要含b就生效 */
+        div[class *= "b"]{
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="abc123">1</div>
+    <div class="abcjkafk">2</div>
+    <div class="678abc">3</div>
+    <div class="bc788">4</div>
+    <div class="abc">5</div>
+    <div>打酱油的</div>
+    
+</body>
+</html>

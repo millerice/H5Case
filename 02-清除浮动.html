@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+        <style>
+            /* 清除浮动
+            1.父元素没有设置高度 子元素浮动
+
+            1.overflow:hidden;
+            2.在最后面新增一个空白的div; 设置clear：both；
+            3.伪类
+             */
+             
+
+             /* 3.伪类  工作中常用*/
+            .clearfix:after,.clearfix:before{
+                counter:"";
+                display: table;;
+            }
+            .clearfix:after{
+                clear: both;
+            }
+            /* 适配低版本的IE浏览器 */
+            .clearfix{
+                zoom: 1;
+            }
+
+
+            /* 2.在最后面新增一个空白的div; 设置clear：both； */
+             .last{
+                 /* clear: both; */
+             }
+
+            /* 1.设置外侧 */
+            .box{
+                width: 210px;
+                border: 1px solid black;
+
+                /* 1.overflow:hidden; */
+                /* overflow:hidden; */
+            }
+            
+            /* 2.小方块 */
+            .box .yellow{
+                width: 50px;
+                height: 50px;
+                margin: 10px;
+                background-color: yellow;
+
+                /* 3.横向排列 
+                1.转换元素
+                2.浮动
+                */
+                /* display: inline-block; */
+
+                float: left;
+    
+            }
+        </style>
+
+</head>
+<body>
+
+    <div class="box clearfix">
+
+        <!-- div.yellow{$}*8 -->
+        <div class="yellow">1</div>
+        <div class="yellow">2</div>
+        <div class="yellow">3</div>
+        <div class="yellow">4</div>
+        <div class="yellow">5</div>
+        <div class="yellow">6</div>
+        <div class="yellow">7</div>
+        <div class="yellow">8</div>
+
+        <div class="last"></div>
+    </div>
+    
+</body>
+</html>

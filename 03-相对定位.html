@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* 定位 position
+        
+        相对定位 relative 参照物以自己原先的位置还在
+        绝对路径 absolute
+        固定定位 fixed
+        无定位  ：static
+
+         */
+
+         div{
+             width: 200px;
+             height: 200px;
+
+         }
+
+         .box{
+             background-color: red;
+
+             position: absolute;
+             left: 20px;
+             top: 20px;
+
+             /* 改变定位层级 默认为0 谁大谁在上面 */
+             z-index: 1;
+
+         }
+         .box1{
+             background-color: green;
+             position: absolute;
+             left: 40px;
+             top: 40px;
+             z-index: 2;
+
+
+         }
+         .box2{
+             background-color: blue;
+             position: absolute;
+             left: 60px;
+             top: 60px;
+             z-index: 3;
+         }
+          
+
+    </style>
+
+
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        /* 初始化 样式重置 */
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            /* 为了定位new图片 */
+            position: relative;
+        }
+        /* 2.设置 列表的 960 40 */
+        .list{
+            width: 960px;
+            height: 40px;
+            margin: 50px auto 0;
+            background: #50a7ee;
+
+        }
+        /* 3.li的大小 100 40 */
+        .list li{
+            width: 100px;
+            height: 40px;
+
+            /* 浮动优先 */
+            float: left;
+            text-align: center;
+            line-height: 40px;
+        }
+        /* 4. a标签*/
+        .list li  a{
+
+            color: white;
+            text-decoration: none;
+
+              /* 转换元素的类型 为了和li标签一样有同样的大小 */
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+        }
+        /* 5 设置鼠标悬浮 */
+        /* .list li:hover{ 
+            改变鼠标悬浮的时候 样式 小手 
+           cursor: pointer; } */
+        .list a:hover{
+            background: #0160a2;
+         
+        }
+        /* 6. 设置new的图片背景 */
+        .list .new{
+            background: url("images/new.png") no-repeat;
+
+            /* 绝对定位 */
+            position: absolute;
+            left: 434px;
+            top: -12px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 1.ul>(li>a{首页})*7 -->
+    <ul class="list">
+        <li><a href="">首页</a></li>
+        <li><a href="">首页</a></li>
+        <li><a href="">首页</a></li>
+        <li><a href="">首页</a></li>
+        <li><a href="">首页</a></li>
+        <li><a href="">首页</a></li>
+        <li><a href="">首页</a></li>
+        <li class="new"></li>
+    </ul>    
+</body>
+</html>

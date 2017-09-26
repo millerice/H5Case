@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .table{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 0 auto;
+
+            /* 边框合并 */
+            border-collapse: collapse;
+
+            /* 了解内容 分离
+            border-collapse: separate;
+
+            border-spacing: 10px 20px;
+            */
+        }
+
+        .table td{
+            border: 1px solid black;
+            text-align: center;
+            /* 垂直对齐 top center bottom*/
+            /* vertical-align: top; */
+
+        }
+    </style>
+
+</head>
+<body>
+        <!-- table的基本操作
+        table 
+        tr row 行数
+        td description 内容
+        th head 居中加粗
+        跨列合并：colspan 找到第几行的那个内容 colspan=“几列” 多余的删除
+        跨行合并：rowspan 找到第几行的那个内容 colspan=“几行” 多余的删除
+        -->
+
+        <table class="table">
+                <!-- 1.第一行 -->
+                <tr>
+                    <!-- td{$}*3 -->
+                     <!-- 跨列合并：colspan -->
+                    <th colspan="2">1</th>
+                    <!-- <td>2</td> -->
+                    <td>3</td>
+                </tr>
+                 <!-- 2.第二行 -->
+                 <tr>
+                        <!-- td{$}*3 -->
+                       
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+
+                     <!-- 3.第三行 -->
+                <tr>
+                        <!-- td{$}*3 -->
+                        <td>1</td>
+                        <td rowspan="2">2</td>
+                        <td>3</td>
+                    </tr>
+
+                     <!-- 4.第四行 -->
+                <tr>
+                        <!-- td{$}*3 -->
+                        <td>1</td>
+                        <!-- <td>2</td> -->
+                        <td>3</td>
+                    </tr>
+    
+
+        </table>
+</body>
+</html>
