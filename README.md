@@ -1,2 +1,1 @@
-# 02_html_base
-this is about html base code
+这是我个人总结收藏的一些H5实用小案例，无需安装任何插件，取之即用！
